@@ -10,7 +10,7 @@ namespace cscondition
     {
         static void Main(string[] args)
         {
-            Console.Write ("숫자입력: ");
+            Console.Write("숫자입력: ");
             var input = int.Parse(Console.ReadLine());
             /*
             if (input % 2 == 0)
@@ -34,7 +34,7 @@ namespace cscondition
             */
             Console.WriteLine(input % 2 == 0 ? "짝수입니다" : "홀수입니다.");
             Console.WriteLine(input > 0 ? "자연수입니다" : "자연수가 아닙니다.");
-            
+
             //현재 시간 구하기
             Console.WriteLine(DateTime.Now.Year);
             Console.WriteLine(DateTime.Now.Month);
@@ -49,13 +49,13 @@ namespace cscondition
                 Console.WriteLine("아침 먹을 시간 입니다.");
             }
             else if (DateTime.Now.Hour < 15)
-                {
-                    Console.WriteLine("점심 먹을 시간 입니다.");
-                }
-                else
-                {
-                    Console.WriteLine("저녁 먹을 시간 입니다.");
-                }
+            {
+                Console.WriteLine("점심 먹을 시간 입니다.");
+            }
+            else
+            {
+                Console.WriteLine("저녁 먹을 시간 입니다.");
+            }
 
             Console.Write("이번 달은 몇 월인가요");
             int input2 = int.Parse(Console.ReadLine());
@@ -96,39 +96,6 @@ namespace cscondition
             {
                 Console.WriteLine("^^* 인사 안해요?");
             }
-            ConsoleKeyInfo info = Console.ReadKey();
-            switch (info.Key)
-            {
-                case ConsoleKey.UpArrow:
-                    Console.WriteLine("위로 이동");
-                    break;
-                case ConsoleKey.DownArrow:
-                    Console.WriteLine("아래로 이동");
-                    break;
-                case ConsoleKey.LeftArrow:
-                    Console.WriteLine("왼쪽으로 이동");
-                    break;
-                case ConsoleKey.RightArrow:
-                    Console.WriteLine("오른쪽으로 이동");
-                    break;
-                default:
-                    switch (info.KeyChar)
-                    {
-                        /*
-                        case (char)38:
-                            Console.WriteLine("위로 이동");
-                            break;
-                            */
-                        case '가':
-                            Console.WriteLine("가 입력");
-                            break;
-                        default:
-                            Console.WriteLine("다른 키를 눌렀습니다.");
-                            break;
-                    }
-                    break;
-            }
-            
         }
     }
 }
