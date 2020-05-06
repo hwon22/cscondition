@@ -21,6 +21,7 @@ namespace cscondition
                 Console.WriteLine("홀수입니다!");
             }
             */
+            /*
             switch(input % 2)
             {
                 case 0:
@@ -30,7 +31,10 @@ namespace cscondition
                     Console.WriteLine("홀수입니다!");
                     break;
             }
-
+            */
+            Console.WriteLine(input % 2 == 0 ? "짝수입니다" : "홀수입니다.");
+            Console.WriteLine(input > 0 ? "자연수입니다" : "자연수가 아닙니다.");
+            
             //현재 시간 구하기
             Console.WriteLine(DateTime.Now.Year);
             Console.WriteLine(DateTime.Now.Month);
